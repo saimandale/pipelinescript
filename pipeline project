@@ -1,0 +1,15 @@
+node 
+{
+    stage('clone java project') {
+    git credentialsId: '62cf7855-045d-4747-a5fb-fb2782972a3b', url: 'https://github.com/saimandale/mahalogin.git'
+}
+    stage('execute maven target ') {
+    sh 'mvn install'
+}
+    
+    
+    
+    
+    
+    
+}
